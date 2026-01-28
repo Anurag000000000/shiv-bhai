@@ -1,1 +1,143 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiv bhai Official </title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://via.placeholder.com/1080x1920') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
 
+        .container {
+            width: 90%;
+            max-width: 400px;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #ffd700;
+            margin-bottom: 10px;
+        }
+
+        h1 { font-size: 24px; margin-bottom: 5px; }
+        
+        .timer-box {
+            font-size: 20px;
+            margin: 15px 0;
+        }
+        
+        .timer-num {
+            color: #ffd700;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .accuracy-badge {
+            background: white;
+            color: black;
+            padding: 5px 15px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        .accuracy-percent {
+            color: red;
+            font-size: 28px;
+            display: block;
+        }
+
+        .btn-telegram {
+            background-color: #00d2ff;
+            color: black;
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 10px;
+            display: block;
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 20px;
+            text-transform: uppercase;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .footer-text {
+            margin-top: 30px;
+            font-size: 14px;
+        }
+
+        .checkbox-btn {
+            background: white;
+            color: green;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>SHIV BHAI OFFICIAL ® 💵</h1>
+    
+    <img src="https://via.placeholder.com/150" alt="Logo" class="profile-img">
+
+    <div class="timer-box">
+        Hurry Up <span id="timer" class="timer-num">14</span> Seconds Left
+    </div>
+
+    <div class="accuracy-percent">100%</div>
+    <div class="accuracy-badge">Right Accuracy</div>
+
+    <p>Join free click now 👇</p>
+
+    <a href="https://t.me/+L_VA4Y9b34U4MzU9" class="btn-telegram">
+        JOIN SHIV BHAI OFFICIAL ® TELEGRAM
+    </a>
+
+    <div class="footer-text">
+        🏆 SHIV BHAI OFFICIAL ® 💵<br>
+        CRICKET BATTING KI DUNIYA KA KING 👑💰
+    </div>
+
+    <a href="YOUR_TELEGRAM_LINK_HERE" class="checkbox-btn">
+        ✅ JOIN FREE TELEGRAM CHANNEL
+    </a>
+</div>
+
+<script>
+    // Simple Countdown Timer
+    let seconds = 14;
+    const timerElement = document.getElementById('timer');
+    
+    setInterval(() => {
+        if (seconds > 0) {
+            seconds--;
+            timerElement.innerText = seconds;
+        } else {
+            seconds = 14; // Restart timer for demo
+        }
+    }, 1000);
+</script>
+
+</body>
+</html>
